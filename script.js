@@ -82,6 +82,21 @@ btnClicked("btn-5");
 btnClicked("btn-6");
 
 
+// Today's Date
+
+const calenderDate = document.getElementById('calenderDate');
+const todayDate = new Date().toDateString();
+calenderDate.innerText = todayDate;
+
+
+document.getElementById('clearHistory').addEventListener('click',function(){
+    createNotification.innerText = '';
+})
+
+
+
+
+
 
 
 

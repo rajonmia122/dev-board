@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevBoard</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+
+</head>
+<body id="body-bg" class="bg-gray-200 py-4">
+    <header>
+        <section class="container bg-white mx-auto p-4 rounded-lg">
+            <nav class="flex justify-between">
+                <div class="flex gap-4 ">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="text-4xl font-bold">DevBoard</h1>
+
+                </div>
+
+                <a href="index.html"><div>
+                    <button id="btn-6" class="btn bg-blue-600 text-white btn-6 rounded-lg ">Back to Desk</button>
+                </div></a>
+
+            </nav>
+
+        </section>
+
+
+
+    </header> 
+    <main>
+        <div><h1 class="text-center font-bold text-2xl my-2">Blogs</h1></div>
+        
+    <div class="container bg-white mx-auto p-4 rounded-lg m-4 ">
+            
+            <p class="text-xl font-bold py-2 ">Question-1: What are the different ways to select an element in the DOM?</p>
+            <hr class="border-t-1 border-dashed my-0">
+        <p class="py-2"> There are four ways to selected an Element in the DOM, use methods like getElementById(),getElementByTagName(), querySelector(),and querySelectorAll() </p>
+    </div>
+    <div class="container bg-white mx-auto p-4 rounded-lg m-4 ">
+            
+        <p class="text-xl font-bold py-2 ">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+        <hr class="border-t-1 border-dashed my-0">
+    <p class="py-2">innerHTML sets the HTML content (including tags) of an element, while innerText gets or sets only the visible text, accounting for CSS styles. In contrast, textContent sets all text inside an element, including hidden text, without interpreting HTML tags. Use them based on whether you need to handle HTML, visible text, or raw text content.</p>
+</div>
+<div class="container bg-white mx-auto p-4 rounded-lg m-4 ">
+            
+    <p class="text-xl font-bold py-2 ">Question-3: What is event delegation in the DOM?</p>
+    <hr class="border-t-1 border-dashed my-0">
+<p class="py-2">Event delegation is a technique in the DOM where you attach a single event listener to a parent element instead of individual listeners to multiple child elements. This works because events bubble up from the child to the parent, allowing the parent to handle events for its children dynamically. It improves performance and simplifies managing events for dynamically added or removed elements.</p>
+</div>
+<div class="container bg-white mx-auto p-4 rounded-lg m-4 ">
+            
+    <p class="text-xl font-bold py-2 ">Question-4: What is event bubbling in the DOM?</p>
+    <hr class="border-t-1 border-dashed my-0">
+<p class="py-2">Event bubbling is a phase in the DOM event flow where an event triggered on a child element propagates upward through its ancestors. For example, clicking a button triggers the event on the button first, then it bubbles up to its parent elements. This allows parent elements to handle events from their children, enabling techniques like event delegation.</p>
+</div>
+<div class="container bg-white mx-auto p-4 rounded-lg m-4 ">
+            
+    <p class="text-xl font-bold py-2 ">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+    <hr class="border-t-1 border-dashed my-0">
+<p class="py-2">To create an element, use document.createElement('tagName').use appendChild() or append(). To remove an element, use remove() or parentElement.removeChild().</p>
+</div>
+    </main>
+
+  
+</body>
+</html>
