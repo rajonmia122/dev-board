@@ -5,38 +5,6 @@ const totalTask = document.getElementById("totalTask");
 const createNotification = document.getElementById('createNotification');
 
 
-// btn1.addEventListener("click",function(event){
-//     const numberedTaskAssigned = parseInt(taskAssigned.innerText);
-//     const newTaskAssigned = numberedTaskAssigned -1;
-//     console.log(newTaskAssigned);
-
-//     taskAssigned.innerText = newTaskAssigned;
-//      // totalTask
-//     const intTotalTask = parseInt(totalTask.innerText);
-//     const newTotalTaskAssigned = intTotalTask +1;
-//     console.log(newTotalTaskAssigned);
-//     totalTask.innerText = newTotalTaskAssigned;
-
-// // create notification
-
-//     const cardTitle = event.target.closest(".card").querySelector(".card-title").innerText;
-
-//     const notification = document.createElement('p');
-//     notification.innerText = `You have completed the task "${cardTitle}" at ${new Date().toLocaleTimeString("en-US")}.`;
-//     notification.classList.add('notification-style');
-//     createNotification.appendChild(notification);
-
-
-// // Button Disabled
-
-//     btn1.classList.add("btn-disabled");
-//     console.log(cardTitle);
-
-// });
-
-
-
-
 function btnClicked(btnID){
 
     const btnWork = document.getElementById(btnID);
@@ -66,7 +34,15 @@ function btnClicked(btnID){
     // Button Disabled
     
     btnWork.classList.add("btn-disabled");
-        console.log(cardTitle);
+       
+       if(numberedTaskAssigned>1){
+        alert('Your Task is Completed');
+
+       } else{
+        alert('Your Task is Completed');
+        alert('"Congratulations!", you have completed all the task');
+       }
+
     
     });
 
