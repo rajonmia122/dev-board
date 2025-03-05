@@ -40,7 +40,7 @@ function btnClicked(btnID){
 
        } else{
         alert('Your Task is Completed');
-        alert('"Congratulations!", you have completed all the task');
+        alert('"Congratulations!", you have completed all the tasks.');
        }
 
     
